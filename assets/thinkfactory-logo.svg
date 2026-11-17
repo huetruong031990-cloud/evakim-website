@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 190" role="img" aria-labelledby="title desc">
+<title id="title">Eva &amp; Kim 생각공장</title>
+<desc id="desc">생각을 상징하는 전구와 공장, 흰색과 노란색의 생각공장 브랜드 로고</desc>
+<g transform="translate(5 16)">
+  <path d="M12 148V87h20V60h25v34l28-18v23l27-19v68H12Z" fill="none" stroke="#fff" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M27 112h12v17H27zm30 0h12v17H57zm30 0h12v17H87z" fill="#fff"/>
+  <path d="M111 45c0-22 17-39 39-39s39 17 39 39c0 18-9 26-17 35-3 3-4 9-4 13h-36c0-5-2-10-5-13-9-10-16-19-16-35Z" fill="#ffd42c"/>
+  <path d="M134 101h33m-30 10h27m-22 10h17" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M150 0v-9M110 8l-7-11M190 8l7-11M98 43H85m131 0h-13" stroke="#ffd42c" stroke-width="6" stroke-linecap="round"/>
+  <path d="M139 49c7-12 10 8 13 2 8-13 15-3 4 12v17" fill="none" stroke="#302715" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="222" y="40" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700" font-style="italic" letter-spacing="1">Eva &amp; Kim</text>
+<path d="M222 52H575" stroke="#ffd42c" stroke-width="5" stroke-linecap="round"/>
+<text x="216" y="127" font-family="'Noto Sans KR','Malgun Gothic',sans-serif" font-size="73" font-weight="900" letter-spacing="-6">
+<tspan fill="#fff">생각</tspan><tspan fill="#ffd42c">공장</tspan></text>
+<text x="227" y="163" fill="#e3e3e3" font-family="Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="1.5">THOUGHT FACTORY</text>
+</svg>
