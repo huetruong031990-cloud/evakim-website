@@ -32,3 +32,14 @@ footer{border-top:1px solid #d8c18944}
 
 /* Brand mark integration: preserve all language layouts */
 .brand{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0}.brand img{display:block;width:190px;height:auto;max-width:44vw;filter:drop-shadow(0 2px 4px #0003)}@media(max-width:420px){.brand img{width:152px}.langs a{padding:8px 9px}}
+
+
+/* Align all three localized pages with the Eva & Kim channel palette */
+header{background:#0e0e0e}
+.hero{background:radial-gradient(circle at 90% 0%,#41371b 0%,transparent 42%),linear-gradient(130deg,#111 5%,#232323 100%)}
+.eyebrow{color:#ffda42}
+.cta{background:#ffda36;color:#171717}
+.langs a[aria-current=page]{background:#ffda36;color:#171717;border-color:#ffda36}
+.tile::before{background:linear-gradient(90deg,#f5d43b,#ae9139)}
+.end{background:linear-gradient(120deg,#f7f2df,#eee8d2)}
+footer{background:#101010;color:#ddd}
