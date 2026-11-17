@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://evakim-website.pages.dev/sitemap.xml
