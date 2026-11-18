@@ -30,6 +30,18 @@ def footer(lang):
 
 def watch(lang,topic):
  t=LABELS[lang]
+ videos={
+  '시장':('https://www.youtube.com/shorts/k3eu_SBgxwg',{'ko':'시장과 마트의 장보기 동선 · 현장 쇼츠','vi':'Đi chợ và siêu thị · video ngắn thực tế','en':'Market vs supermarket shopping · field short'}),
+  '카페':('https://www.youtube.com/shorts/1ADz8rqb7uo',{'ko':'도로를 바라보는 카페 의자 · 현장 쇼츠','vi':'Ghế quán cà phê hướng ra đường · video ngắn','en':'Café chairs facing the street · field short'}),
+  '분더우':('https://www.youtube.com/shorts/liVCCSZNtA4',{'ko':'맘똠 소스 소개 · 관련 쇼츠','vi':'Giới thiệu mắm tôm · video ngắn liên quan','en':'A look at mắm tôm sauce · related short'})
+ }
+ if topic in videos:
+  url,labels=videos[topic]
+  extra=''
+  if topic=='시장':
+   label={'ko':'현지 시장 탐방 영상도 보기','vi':'Xem thêm vlog đi chợ địa phương','en':'Watch the local market vlog'}[lang]
+   extra=f'<p><a href="https://www.youtube.com/watch?v=phi0mSMj-rE&amp;t=41s">{label} →</a></p>'
+  return f'<aside class="watch"><h2>{t[8]}</h2><a class="button" data-youtube-topic="{e(topic)}" href="{url}">{labels[lang]} →</a><p><a href="{CHANNEL}">{t[10]} ↗</a></p>{extra}</aside>'
  return f'<aside class="watch"><h2>{t[8]}</h2><a class="button" data-youtube-topic="{e(topic)}" href="{CHANNEL}/search?query={quote(topic)}">{t[9]} →</a><a href="{CHANNEL}">{t[10]} ↗</a><p class="meta" style="color:#d8d4c8">{t[11]}</p></aside>'
 
 def card(a,lang):

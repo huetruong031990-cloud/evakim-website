@@ -16,7 +16,7 @@ Mục tiêu: người Hàn đến từ tìm kiếm, nhận thông tin hữu ích
 - Preserve the two existing Korean culture articles.
 - Add three practical guides in Korean, Vietnamese and English (9 article URLs).
 - Add localized blog indexes, language alternates, article metadata, breadcrumbs and sitemap entries.
-- Add topic-specific channel search links, clearly labelled as searches, and related reading on every article.
+- Add verified topic-specific video links and related reading on every article. Blog indexes retain clearly labelled channel searches.
 - Select 24950.webp as homepage creator image and 24955.webp as portrait. Other supplied photos and screenshots are deliberately not published. No gallery.
 - Keep original image files unchanged; use explicit dimensions, CSS layout and lazy loading for secondary images.
 - Editorial data: content/guides.json. Build: python3 scripts/build_guides.py. Validate: python3 scripts/check_site.py.
@@ -50,3 +50,14 @@ Search Console / Naver indexing, search traffic and YouTube conversion have not 
 
 ## Deployment
 Existing GitHub main is connected to Cloudflare Pages. Verify the new commit's Cloudflare check and compare public response bytes to the release files. A successful push alone is not a completed deployment. Do not force-push over another daily task's edits.
+
+## Verified video mapping — 2026-11-18
+Channel search UI confirmed channel identity, titles and descriptions. These are related footage, not claims that the entire new ordering guide is covered by a video.
+- Market movement short: https://www.youtube.com/shorts/k3eu_SBgxwg
+- Market vlog: https://www.youtube.com/watch?v=phi0mSMj-rE&t=41s
+- Café chairs facing the road: https://www.youtube.com/shorts/1ADz8rqb7uo
+- Mắm tôm sauce short: https://www.youtube.com/shorts/liVCCSZNtA4
+- The planned food weighing/breakdown video remains unverified and is not represented as published.
+
+## Release verification
+First deployment e1a4736 passed Cloudflare Pages. All 24 public HTML, image, CSS, sitemap and robots responses exactly matched local release bytes. Home language switching KO → VI → EN and corresponding article destinations were verified in the public browser. Local preview was inaccessible to that browser; real mobile-device validation remains pending.
