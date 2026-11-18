@@ -163,4 +163,16 @@ main>section:first-child{margin-top:0}main>section:first-child.feature{padding:c
   });
   setLanguage(current);
 })();
+</script><script>
+/* Track outbound YouTube link clicks only when analytics is configured. */
+document.addEventListener('click',function(event){
+  var link=event.target.closest && event.target.closest('a[href]');
+  if(!link)return;
+  var url;
+  try{url=new URL(link.href,location.href);}catch(e){return;}
+  if(!/(^|\.)youtube\.com$|(^|\.)youtu\.be$/.test(url.hostname))return;
+  var payload={link_url:url.href,link_domain:url.hostname,link_text:(link.textContent||'').trim().slice(0,100),source_page:location.pathname};
+  if(typeof window.gtag==='function')window.gtag('event','evakim_youtube_click',payload);
+  else if(Array.isArray(window.dataLayer))window.dataLayer.push(Object.assign({event:'evakim_youtube_click'},payload));
+});
 </script></body></html>
