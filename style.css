@@ -43,3 +43,7 @@ header{background:#0e0e0e}
 .tile::before{background:linear-gradient(90deg,#f5d43b,#ae9139)}
 .end{background:linear-gradient(120deg,#f7f2df,#eee8d2)}
 footer{background:#101010;color:#ddd}
+
+/* Korean mobile typography: avoid splitting Hangul words between lines */
+html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3,html[lang="ko"] p,html[lang="ko"] .cta,html[lang="ko"] .tile{word-break:keep-all;overflow-wrap:break-word;hyphens:none}
+@media(max-width:700px){html[lang="ko"] .hero h1{font-size:clamp(2rem,8vw,3.35rem)}html[lang="ko"] .wrap{min-width:0}}
